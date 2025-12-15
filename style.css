@@ -1,0 +1,246 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+/* font-family: "Lexend Deca", sans-serif;
+font-weight: 400; */
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
+/* font-family: "Big Shoulders", sans-serif;
+font-weight: 700; */
+
+
+
+:root{
+    /* primary - color */
+--gold-500: hsl(31, 77%, 52%);
+--cyan-800: hsl(184, 100%, 22%);
+--green-950:hsl(179, 100%, 13%);
+/* for h1 */
+--white:white;
+/* for paragraph */
+--paragraph-color-white:hsla(0, 0%, 100%, 0.75);
+
+/* for (backgroung - heading - button) */
+--Gray-100:hsl(0, 0%, 95%);
+
+/* font-size */
+--Font-size: 15px;
+
+/* font */
+--h1-f:"Big Shoulders", sans-serif;
+--p-f:"Lexend Deca", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: white;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    background: var(--Gray-100);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.container div{
+width: 300px;
+height:500px;
+display: flex;
+align-items: start;
+flex-direction: column;
+padding: 30px 0 0 50px;
+position: relative;
+}
+
+
+
+
+.container div h1{
+    font-family: var(--h1-f);
+    color: var(--white);
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 20px 0;
+    font-size: 40px;
+}
+.container div p{
+    font-family: var(--p-f);
+    color: var(--paragraph-color-white);
+    font-weight: 400;
+    font-size: var(--Font-size);
+    margin: 10px 0;
+    width: 84%;
+    line-height: 25px;
+}
+.container div button{
+    background: var(--Gray-100);
+    padding: 15px 35px;
+    border-radius: 60px;
+    font-family: var(--p-f);
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    border: none;
+    transition: .3s all ease;
+}
+.container div button:hover{
+    position: absolute;
+    border: 3px solid white;
+    background: transparent;
+    transform: translateX(5px);
+    transform: translateY(-5px);
+    cursor: pointer;
+    color: var(--white);
+}
+.container div img{
+    color: var(--Gray-100);
+    margin: 20px 0;
+}
+
+
+
+
+
+
+.container .box1{
+    background: var(--gold-500);
+    border-radius: 10px 0 0 10px;
+}
+.container .box2{
+    background: var(--cyan-800);
+}
+.container .box3{
+    background: var(--green-950);
+    border-radius: 0 10px 10px 0;
+}
+    
+
+
+
+
+
+/* mobile  */
+@media (max-width: 651px) {
+    .container{
+        flex-direction: column;
+        padding: 90px 25px;
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .container div{
+        width: 100%;
+        height: auto;
+        min-height: 400px;
+        padding: 45px 45px 0 45px;
+        border-radius: 10px ;
+        margin-bottom: 0;
+    }
+    
+    .container .box1{
+        border-radius: 10px 10px 0 0 ;
+    }
+    .container .box2{
+        border-radius:0 ;
+    }
+    
+    .container .box3{
+        border-radius: 0 0 10px 10px;
+    }
+    
+    .container div h1{
+        font-size: 38px;
+        margin: 25px 0;
+    }
+    
+    .container div p{
+        width: 100%;
+        line-height: 1.7;
+        margin: 10px 0 30px 0;
+    }
+    
+    .container div button{
+        position: relative;
+        left: 0;
+        bottom: 0;
+        margin: 20px 0 45px 0;
+    }
+    
+    .container div button:hover{
+        position: relative;
+        transform: translateY(-3px);
+    }
+}
+
+
+
+/* max-width = 375px */
+@media (max-width: 375px) {
+    .container{
+        padding: 70px 20px;
+    }
+    
+    .container div{
+        min-height: 380px;
+        padding: 40px 35px 0 35px;
+    }
+    
+    .container div h1{
+        font-size: 34px;
+        margin: 20px 0;
+    }
+    
+    .container div p{
+        font-size: 14px;
+        line-height: 1.6;
+        margin: 10px 0 25px 0;
+    }
+    
+    .container div button{
+        padding: 12px 30px;
+        font-size: 14px;
+        margin: 15px 0 40px 0;
+    }
+    
+    .container div img{
+        width: 60px;
+        height: 40px;
+    }
+}
+
+/* max-width = 320px */
+
+@media (max-width: 320px) {
+    .container{
+        padding: 50px 15px;
+    }
+    
+    .container div{
+        min-height: 350px;
+        padding: 35px 25px 0 25px;
+    }
+    
+    .container div h1{
+        font-size: 30px;
+    }
+    
+    .container div p{
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    
+    .container div button{
+        padding: 10px 25px;
+        font-size: 13px;
+        margin: 10px 0 35px 0;
+    }
+}
