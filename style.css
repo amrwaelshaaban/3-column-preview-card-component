@@ -59,7 +59,7 @@ align-items: start;
 flex-direction: column;
 padding: 30px 0 0 50px;
 position: relative;
-margin-top: 70px;
+margin-top: 60px;
 }
 
 
@@ -115,6 +115,15 @@ margin-top: 70px;
 .container .box1{
     background: var(--gold-500);
     border-radius: 10px 0 0 10px;
+}
+.container .box1 button{
+    color: var(--gold-500);
+}
+.container .box2 button{
+    color: var(--cyan-800);
+}
+.container .box2 button{
+    color: var(--green-950);
 }
 .container .box2{
     background: var(--cyan-800);
